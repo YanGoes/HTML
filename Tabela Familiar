@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Document</title>
+</head>
+<style>
+</style>
+<body>
+    <table style="width: 100%; border: 2px solid black; border-bottom: 0px; border-collapse: collapse;">
+    <tr> <th>Familia</th></tr>
+    </table>
+    <table style="width: 100%; border: 1px 1px 0px 1px solid black; border-collapse: collapse;">  
+            <th style="border: 2px solid black;">Nome</th>
+            <td style="border: 2px solid black;">Yan</td>
+            <td style="border: 2px solid black;">Vanderlei</td>
+            <td style="border: 2px solid black;">Cristiane</td>
+        </tr>
+        <tr>
+            <th style="border: 2px solid black;">Idade</th>
+            <td style="border: 2px solid black;">19</td>
+            <td style="border: 2px solid black;">51</td>
+            <td style="border: 2px solid black;">49</td>
+        </tr>
+        <tr>
+            <th style="border: 2px solid black;">Grau familiar</th>
+            <td style="border: 2px solid black;">Filho</td>
+            <td style="border: 2px solid black;">Pai</td>
+            <td style="border: 2px solid black;">Mãe</td>
+        </tr>
+    </table>
+</body>
+</html>
