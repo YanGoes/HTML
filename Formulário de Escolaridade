@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+th, td {
+border:2px solid rgb(216, 216, 216);
+border-style: groove;
+}
+</style>
+    <meta charset="UTF-8">
+</head>
+<body>
+<table style="width: 30%; border: 1px solid rgb(255, 255, 255);">
+    <tr>
+        <th>Nome:</th>
+    <th>
+<form>
+    <label for="Nome"></label>
+    <input type="text" id="Nome">
+    </form>
+</th></tr>
+    </tr>
+
+    <tr>
+        <th>Sexo:</th>
+<th>
+<input type="radio" id="Feminino" name="fav_language" value="Feminino">
+<label for="Feminino">Feminino</label>
+<input type="radio" id="Masculino" name="fav_language" value="Masculino">
+<label for="Masculino">Masculino</label>
+</th>
+</tr>
+   
+<tr style="width: 40%;">
+<th>Escolaridade:</th>
+    <th><form>
+   <label for="Validade"></label>
+    <select id="Validade" name="Validade">
+      <option value="1º Grau">1º Grau</option>
+      <option value="2º Grau">2º Grau</option>
+      <option value="Superior">Superior</option>
+    </select></form></th>
+
+</tr></table>
+</body>
+</html>
