@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Escola Virtual</title>
+    <style>
+        table {
+  font-family:Helvetica, sans-serif;
+  border-collapse: collapse;
+  border: #dddd;
+  width: 97%;
+  margin: auto;
+}
+
+
+.atividade-extra{
+    margin-left: -90px;
+    margin-right: 90px;
+}
+
+
+.form-row {
+display: flex;
+justify-content: space-between;
+}
+
+
+.form-item {
+flex: 1;
+margin-right: 2px;
+}
+
+
+.form-item:last-child {
+margin-right: 0;
+}
+    </style>
+</head>
+<body>
+    <div style="border: 3px solid black ; width: 40%; margin: auto">
+
+
+    <h1 style="text-align: center;font-size: 50px;">Escola Virtual</h1>
+    <h1 style="text-align: center; font-size: 45px; border-bottom: 3px solid black; padding-bottom: 25px;">Formulário de Pré-Matrícula</h1>
+   
+    <table style="border-style: ridge;">
+        <tr>
+        <td style="text-align: left; font-size: larger; padding-top: 5px; padding-bottom: 5px"><b>Dados Pessoais:</b></td>
+    </tr>
+        <td>
+            <form style="margin-bottom:5px;" autocomplete="on">
+                <label style="margin-left: 150px;" for="nome do Aluno">Nome do Aluno:</label>
+                <input type="nome do Aluno" id="Numero">
+                </form>
+                <form style="margin-bottom:5px;" autocomplete="on">
+                    <label style="margin-left: 70px;"  for="Nascimento">Nascimento (dd/mm/aaaa):</label>
+                    <input style="width: 17px;" type="Nascimento" id="Numero">/<input style="width: 17px;" type="Nascimento" id="Numero">/<input  style="width: 30px;"type="Nascimento" id="Numero">
+                    </form>
+                    <form style="margin-bottom:5px;" autocomplete="on">
+                        <label style="margin-left: 156px;" for="Nome mae">Nome da Mãe:</label>
+                        <input type="nome mae" id="Numero">
+                        </form>
+                        <form style="margin-bottom:5px;" autocomplete="on">
+                            <label style="margin-left: 164px;" for="nome pai">Nome do Pai:</label>
+                            <input type="nome pai" id="Numero">
+                            </form>
+                            <form style="margin-bottom:5px;" autocomplete="on">
+                                <label style="margin-left: 197px;" for="Telefone">Telefone: DDD(<input style="width: 16px;" type="text" id="Numero">) Tel:<input style="width: 70px;" type="text" id="Numero"> Ramal:<input style="width: 54px;" type="text" id="Numero"></label>
+                                </form>
+                                <form style="margin-bottom:5px;" autocomplete="on">
+                                    <label style="margin-left: 212px;" for="emial">E-Mail:</label>
+                                    <input type="email" id="emial">
+                                    </form>
+                                </td>
+
+
+
+
+                                <table style="border-style: ridge;">
+                                    <tr>
+                                    <td style="text-align: left; font-size: larger; padding-bottom: 5px; padding-top: 5px;"><b>Informações de Matrícula:</b></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-row">
+                                            <div style="margin-left: 9px;" class="form-item">
+                                                <label for="Serie">Série:</label><br>
+                                                <input list="browsers" nome="browser">
+                                                <datalist id="browsers">
+                                                    <option value="Pré-Escolar">
+                                                    <option value="Ensino fundamental 1">
+                                                    <option value="Ensino fundamental 2">
+                                                    <option value="Ensino Médio">
+                                                </datalist>
+                                            </div>
+                       
+                                            <div class="form-item">
+                                                <label>Turno:</label><br>
+                                                <input type="radio" id="Manhã" name="fav_language" value="Manhã">
+                                                <label for="Manhã">Manhã</label><br>
+                                                <input type="radio" id="Tarde" name="fav_language" value="Tarde">
+                                                <label for="Tarde">Tarde</label><br>
+                                            </div>
+                       
+                                            <div class="atividade-extra">
+                                                <label for="Atividade Extracurricularres">Atividades Extracurriculares:</label><br>
+                                                <input style="color: blue;" type="checkbox" id="atividade1" name="atividade1" value="Informática">
+                                                <label for="atividade1"> Informática</label><br>
+                                                <input type="checkbox" id="atividade2" name="atividade2" value="Música">
+                                                <label for="atividade2"> Música</label><br>
+                                                <input type="checkbox" id="atividade3" name="atividade3" value="Balet">
+                                                <label for="atividade3"> Balet</label><br>
+                                                <input type="checkbox" id="atividade4" name="atividade4" value="Pintura">
+                                                <label for="atividade4"> Pintura</label><br>
+                                                <input type="checkbox" id="atividade4" name="atividade4" value="Pintura">
+                                                <label for="atividade4"> Judô</label><br>
+                                                <input type="checkbox" id="atividade4" name="atividade4" value="Pintura">
+                                                <label for="atividade4"> Futebol</label><br>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                       
+                            <div style="text-align:center; margin-top:12px; margin-bottom: 12px;">
+                                <button type="button" onclick="alert('Formulário Enviado com sucesso! Aguarde, que entraremos em contato com você.')">Envia Formulário</button>
+                                <button type="button" onclick="alert('Campos limpados com sucesso!')">Limpa Campos</button>
+                            </div>
+                        </div>
+
+
+</body>
+</html>
