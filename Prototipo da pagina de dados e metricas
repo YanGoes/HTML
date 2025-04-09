@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Relatório</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8; /* Fundo claro para contraste */
+            color: #333; /* Texto escuro para melhor legibilidade */
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            width: 15%;
+            background-color: #ffffff; /* Fundo branco para a barra lateral */
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-right: 2px solid #f76363; /* Borda vermelha */
+        }
+
+        .sidebar img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            background-color: #ddd; /* Cor de fundo padrão para imagem */
+        }
+
+        .sidebar div {
+            width: 100%;
+            padding: 10px; /* Aumenta o espaço interno */
+            background-color: #f76363; /* Fundo vermelho */
+            margin: 10px 0;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 20px;
+            color: #ffffff; /* Texto branco */
+            font-size: 14px;
+            transition: background-color 0.3s; /* Efeito de transição ao passar o mouse */
+        }
+
+        .sidebar div:hover {
+            background-color: #c75252; /* Tom mais escuro ao passar o mouse */
+        }
+
+        .content {
+            width: 85%;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #ffffff; /* Fundo branco */
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border-bottom: 2px solid #f76363; /* Borda inferior vermelha */
+        }
+
+        .top-bar div {
+            height: 35px; /* Aumenta a altura dos itens */
+            background-color: #f76363; /* Fundo vermelho */
+            border-radius: 5px;
+            text-align: center;
+            line-height: 35px; /* Alinha verticalmente o texto */
+            color: #ffffff; /* Texto branco */
+            font-size: 20px;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .big-box, .small-box, .wide-box {
+            background-color: #ffffff; /* Fundo branco para as caixas */
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave para profundidade */
+        }
+
+        .big-box {
+            grid-column: span 2;
+            height: auto;
+        }
+       
+        .small-box {
+            height: auto;
+        }
+       
+        .wide-box {
+            grid-column: span 2;
+        }
+
+        .bottom-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Barra lateral -->
+        <aside class="sidebar">
+            <img src="https://i.redd.it/essa-foto-ia-que-t%C3%B4-usando-de-perfil-no-wpp-ficou-muito-v0-1m4zmh31i8yc1.jpg?width=3070&amp;format=pjpg&amp;auto=webp&amp;s=3dc837b42ea59d72f9616248f3f0cf0ccc9ae0ee" alt="Perfil">
+            <h2>Pedro Henrique<br></h2>
+            <h3>Suporte ao cliente</h3>
+            <div>Home</div>
+            <div>Relatórios</div>
+            <div>Gráficos</div>
+            <div>Configurações</div>
+            <div>Ajuda</div>
+            <div>Sair</div>
+        </aside>
+
+        <!-- Conteúdo principal -->
+        <main class="content">
+           <!-- Barra superior -->
+           <div class="top-bar">
+                <div>Data</div>
+                <div>Notificações</div>
+                <div>Usuário</div>
+           </div>
+
+           <!-- Conteúdo principal -->
+           <div class="main-content">
+               <div class="small-box">Resumo 1</div>
+               <div class="small-box">Resumo 2</div>
+               <div class="big-box">Dados principais ou gráfico maior</div>
+           </div>
+
+           <!-- Seção inferior -->
+           <div class="bottom-grid">
+               <div class="wide-box">Gráfico de barra ou outra informação ampla</div>
+               <div class="small-box">Informação extra 1</div>
+               <div class="small-box">Informação extra 2</div>
+           </div>
+       </main>
+    </div>
+</body>
+</html>
