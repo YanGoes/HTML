@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cardápio do Restaurante</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 20px;
+        }
+        .cardapio {
+            border: 5px solid #ff6347;
+            border-radius: 10px;
+            background-color: #fff;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            color: #ff6347;
+        }
+        .item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .item:last-child {
+            border-bottom: none;
+        }
+        .item img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .nome {
+            font-size: 1.5em;
+            color: #333;
+        }
+        .descricao {
+            color: #666;
+        }
+        .valor {
+            font-weight: bold;
+            color: #ff6347;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cardapio">
+        <h1>Gastrô Arte</h1>
+
+        <div class="item">
+            <img src="https://static.itdg.com.br/images/1200-675/3f0787cb6db2f0db10269fc45bd8abee/shutterstock-1078415420.jpg" alt="Entrada">
+            <div class="nome">Salada Caesar</div>
+            <div class="descricao">Alface romana, croutons, queijo parmesão e molho Caesar.</div>
+            <div class="valor">R$ 25,00</div>
+        </div>
+
+        <div class="item">
+            <img src="https://www.designi.com.br/images/preview/10052846-m.jpg" alt="Prato Principal">
+            <div class="nome">Filé Mignon ao Molho Madeira</div>
+            <div class="descricao">Filé mignon grelhado, servido com molho madeira e purê de batata.</div>
+            <div class="valor">R$ 65,00</div>
+        </div>
+
+        <div class="item">
+            <img src="https://recipesblob.oetker.com.br/assets/d044a4ef3cfe45998593f500c00942ef/1272x764/torta-de-limo.jpg" alt="Sobremesa">
+            <div class="nome">Torta de Limão</div>
+            <div class="descricao">Deliciosa torta de limão com merengue e base crocante (fatia).</div>
+            <div class="valor">R$ 20,00</div>
+        </div>
+        
+        <div class="item">
+            <div class="nome">Combo</div>
+            <div class="descricao">O combo com: Salada Caesar, Filé Mignon ao Molho Madeira e a Torta de Limão, sai por apenas: </div>
+            <div class="valor">R$ 110,00</div>
+        </div>
+    </div>
+    
+</body>
+</html>
