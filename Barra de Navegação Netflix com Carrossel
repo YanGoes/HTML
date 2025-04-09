@@ -112,7 +112,7 @@ display: none;
 }
 
 .contentSlide .block:hover {
-    border: 3px solid rgb(151, 151, 151); /* Borda branca ao passar o mouse */
+    border: 3px solid white; /* Borda branca ao passar o mouse */
     box-shadow: 0 4px 20px rgba(255, 255, 255, 0.5); /* Sombra suave */
     transform: scale(1.05); /* Aumenta levemente a imagem */
     transition: all 0.3s ease; /* Transição suave */
