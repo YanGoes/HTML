@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>TABELA DO BRASILEIRAO</title>
+    <style>
+table {
+  font-family: sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+}
+td, th {
+  border: 1.2px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+th, td:nth-child(even) {
+  background-color: #c2c2c2;
+}
+    </style>
+</head>
+<body>
+        <table style="width:100,">
+<tr>
+    <th style="background-color: white;width:40%"></th>
+    <th style="color: black;">P</th>
+    <th style="background-color: white;">J</th>
+    <th>V</th>
+    <th style="background-color: white;">E</th>
+    <th>D</th>
+    <th style="background-color: white;">GP</th>
+    <th>GC</th>
+    <th style="background-color: white;">SG</th>
+    <th>%</th>
+</tr>
+
+<tr>
+    <td style="background-color: white; width:40%;text-align: start"><span style="color:darkblue; font-size: 18px; font-weight: bold; margin-right: 7px;">1</span><b>Corinthians</b></td>
+    <td><b>17</b></td>
+    <td>7</td>
+    <td>5</td>
+    <td>2</td>
+    <td>0</td>
+    <td>15</td>
+    <td>8</td>
+    <td>7</td>
+    <td>81</td>
+</tr>
+
+<tr>
+    <td style="background-color: white; width:40%;text-align: start"><span style="color:darkblue; font-size: 18px; font-weight: bold; margin-right: 7px;">2</span><b>Ceará</b></td>
+    <td><b>17</b></td>
+    <td>7</td>
+    <td>5</td>
+    <td>2</td>
+    <td>0</td>
+    <td>7</td>
+    <td>1</td>
+    <td>6</td>
+    <td>81</td>
+</tr>
+
+
+<tr>
+    <td style="background-color: white;width:40%;text-align: start"><span style="color:darkblue; font-size: 18px; font-weight: bold; margin-right: 7px;">3</span><b>Fluminense</b></td>
+    <td><b>15</b></td>
+    <td>7</td>
+    <td>5</td>
+    <td>0</td>
+    <td>2</td>
+    <td>11</td>
+    <td>5</td>
+    <td>6</td>
+    <td>71.4</td>
+</tr>
+
+<tr style="border-bottom: 2.7px solid rgb(158, 158, 158);">
+    <td style="background-color: white;width:40%;text-align: start"><span style="color:rgb(0, 183, 255); font-size: 18px; font-weight: bold; margin-right: 7px;">4</span><b>Santos</b></td>
+    <td><b>12</b></td>
+    <td>7</td>
+    <td>3</td>
+    <td>3</td>
+    <td>1</td>
+    <td>15</td>
+    <td>10</td>
+    <td>5</td>
+    <td>57.1</td>
+</tr>
+
+<tr>
+    <td style="background-color: white;width:40%;text-align: start"><span style="color:#f7c939; font-size: 18px; font-weight: bold; margin-right: 7px;">5</span><b>São Paulo</b></td>
+    <td><b>11</b></td>
+    <td>7</td>
+    <td>3</td>
+    <td>2</td>
+    <td>2</td>
+    <td>9</td>
+    <td>6</td>
+    <td>3</td>
+    <td>52.4</td>
+</tr>
+
+<tr>
+    <td style="background-color: white;width:40%;text-align: start"><span style="color:#f7c939; font-size: 18px; font-weight: bold; margin-right: 7px;">6</span><b>Goiás</b></td>
+    <td><b>10</b></td>
+    <td>7</td>
+    <td>3</td>
+    <td>1</td>
+    <td>3</td>
+    <td>9</td>
+    <td>10</td>
+    <td>-1</td>
+    <td>47.6</td>
+</tr>
+
+<tr>
+    <td style="background-color: white;width:40%;text-align: start"><span style="color:#f7c939; font-size: 18px; font-weight: bold; margin-right: 7px;">7</span><b>Botafogo</b></td>
+    <td><b>9</b></td>
+    <td>7</td>
+    <td>2</td>
+    <td>3</td>
+    <td>2</td>
+    <td>13</td>
+    <td>11</td>
+    <td>2</td>
+    <td>42.9</td>
+</tr>
+
+<tr>
+    <td style="background-color: white;width:40%;text-align: start"><span style="color:#f7c939; font-size: 18px; font-weight: bold; margin-right: 7px;">8</span><b>Flamengo</b></td>
+    <td><b>9</b></td>
+    <td>7</td>
+    <td>2</td>
+    <td>3</td>
+    <td>2</td>
+    <td>9</td>
+    <td>8</td>
+    <td>1</td>
+    <td>42.9</td>
+</tr>
+
+<tr>
+    <td style="background-color: white;width:40%;text-align: start"><span style="color:#f7c939; font-size: 18px; font-weight: bold; margin-right: 7px;">9</span><b>Cruzeiro</b></td>
+    <td><b>9</b></td>
+    <td>6</td>
+    <td>2</td>
+    <td>3</td>
+    <td>1</td>
+    <td>7</td>
+    <td>6</td>
+    <td>1</td>
+    <td>50</td>
+</tr>
+
+<tr>
+    <td style="background-color: white;width:40%;text-align: start"><span style="color:#f7c939; font-size: 18px; font-weight: bold; margin-right: 7px;">10</span><b>Guarani</b></td>
+    <td><b>9</b></td>
+    <td>6</td>
+    <td>2</td>
+    <td>3</td>
+    <td>1</td>
+    <td>7</td>
+    <td>7</td>
+    <td>0</td>
+    <td>50</td>
+</tr>
+
+<tr>
+    <td style="background-color: white;width:40%;text-align: start"><span style="color:#f7c939; font-size: 18px; font-weight: bold; margin-right: 7px;">11</span><b>Palmeiras</b></td>
+    <td><b>8</b></td>
+    <td>6</td>
+    <td>2</td>
+    <td>2</td>
+    <td>2</td>
+    <td>5</td>
+    <td>4</td>
+    <td>1</td>
+    <td>44.4</td>
+</tr>
+
+<tr>
+    <td style="background-color: white;width:40%;text-align: start"><span style="color:#f7c939; font-size: 18px; font-weight: bold; margin-right: 7px;">12</span><b>Grêmio</b></td>
+    <td><b>8</b></td>
+    <td>7</td>
+    <td>2</td>
+    <td>2</td>
+    <td>3</td>
+    <td>10</td>
+    <td>11</td>
+    <td>-1</td>
+    <td>38.1</td>
+</tr>
+
+<tr>
+    <td style="background-color: white;width:40%;text-align: start"><span style="color:#ced2d9; font-size: 18px; font-weight: bold; margin-right: 7px;">13</span><b>Avaí</b></td>
+    <td><b>8</b></td>
+    <td>7</td>
+    <td>2</td>
+    <td>2</td>
+    <td>3</td>
+    <td>10</td>
+    <td>11</td>
+    <td>-1</td>
+    <td>38.1</td>
+</tr>
+
+<tr>
+    <td style="background-color: white;width:40%;text-align: start"><span style="color:#ced2d9; font-size: 18px; font-weight: bold; margin-right: 7px;">14</span><b>Vitória</b></td>
+    <td><b>8</b></td>
+    <td>7</td>
+    <td>2</td>
+    <td>2</td>
+    <td>3</td>
+    <td>7</td>
+    <td>8</td>
+    <td>-1</td>
+    <td>38.1</td>
+</tr>
+
+<tr>
+    <td style="background-color: white;width:40%;text-align: start"><span style="color:#ced2d9; font-size: 18px; font-weight: bold; margin-right: 7px;">15</span><b>Prudente</b></td>
+    <td><b>8</b></td>
+    <td>6</td>
+    <td>2</td>
+    <td>2</td>
+    <td>2</td>
+    <td>9</td>
+    <td>11</td>
+    <td>-2</td>
+    <td>44.4</td>
+</tr>
+
+<tr style="border-bottom: 2.7px solid rgb(158, 158, 158);">
+    <td style="background-color: white;width:40%;text-align: start"><span style="color:rgb(206, 210, 217); font-size: 18px; font-weight: bold; margin-right: 7px;">16</span><b>Atlético-PR</b></td>
+    <td><b>7</b></td>
+    <td>7</td>
+    <td>2</td>
+    <td>1</td>
+    <td>4</td>
+    <td>10</td>
+    <td>15</td>
+    <td>-5</td>
+    <td>33.3</td>
+</tr>
+
+<tr>
+    <td style="background-color: white;width:40%;text-align: start"><span style="color:#d02a13; font-size: 18px; font-weight: bold; margin-right: 7px;">17</span><b>Internacional</b></td>
+    <td><b>6</b></td>
+    <td>6</td>
+    <td>2</td>
+    <td>0</td>
+    <td>4</td>
+    <td>10</td>
+    <td>12</td>
+    <td>-2</td>
+    <td>33.3</td>
+</tr>
+
+<tr>
+    <td style="background-color: white;width:40%;text-align: start"><span style="color:#d02a13; font-size: 18px; font-weight: bold; margin-right: 7px;">18</span><b>Atlético-MG</b></td>
+    <td><b>6</b></td>
+    <td>7</td>
+    <td>2</td>
+    <td>0</td>
+    <td>4</td>
+    <td>10</td>
+    <td>12</td>
+    <td>-2</td>
+    <td>33.3</td>
+</tr>
+
+<tr>
+    <td style="background-color: white;width:40%;text-align: start"><span style="color:#d02a13; font-size: 18px; font-weight: bold; margin-right: 7px;">19</span><b>Vasco</b></td>
+    <td><b>5</b></td>
+    <td>7</td>
+    <td>1</td>
+    <td>2</td>
+    <td>4</td>
+    <td>5</td>
+    <td>12</td>
+    <td>-7</td>
+    <td>23.8</td>
+</tr>
+
+<tr>
+    <td style="background-color: white;width:40%;text-align: start"><span style="color:#d02a13; font-size: 18px; font-weight: bold; margin-right: 7px;">20</span><b>Atlético-GO</b></td>
+    <td><b>1</b></td>
+    <td>6</td>
+    <td>0</td>
+    <td>1</td>
+    <td>5</td>
+    <td>3</td>
+    <td>9</td>
+    <td>-6</td>
+    <td>5.6</td>
+</tr>
+</table>
+</body>
+</html>
