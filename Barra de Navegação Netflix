@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+       
+        body {
+            color: white;
+            background-image: url('https://noticiasetecnologia.com/wp-content/uploads/2021/01/Outside-the-Wire.jpg'); /* Imagem de fundo */
+            background-size: 100%;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+
+        .navbar {
+            display: flex;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            justify-content: space-between;
+            padding: 15px 30px;
+            background-color: rgba(0, 0, 0, 0.445); /* Transparência no fundo do menu */
+            background-image: linear-gradient(to Top, rgba(128, 128, 128, 0.726), rgba(0, 0, 0, 0.699));
+        }
+
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+
+        /* Dropdown */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+
+        .dropbtn {
+            background-color: inherit;
+            color: white;
+            padding: 14px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: rgba(51, 51, 51, 0.8);
+            min-width: 160px;
+            z-index: 1;
+            border-radius: 10px;
+        }
+
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            display: block;
+        }
+
+
+        .dropdown:hover .dropdown-content {
+            display: block; /* Mostrar o dropdown ao passar o mouse */
+        }
+
+
+        .dropdown-content a:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Mudar fundo ao passar o mouse */
+        }
+
+
+        /* Seção principal */
+        .main-section {
+            position: relative;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            padding-left: 50px;
+            color: white;
+        }
+
+
+        .main-content {
+            max-width: 500px;
+        }
+
+
+        .main-content h1 {
+            font-size: 3em;
+        }
+
+
+        .main-content p {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+
+        .button {
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+
+        .button.play {
+            background-color: rgba(255, 255, 255, 0.8); /* Botão com fundo semi-transparente */
+            color: black;
+        }
+
+
+        .button.info {
+            background-color: rgba(128, 128, 128, 0.8); /* Botão com fundo semi-transparente */
+            color: rgb(255, 255, 255);
+        }
+
+
+        /* Seção "Continuar assistindo" */
+        .continue-watching {
+            padding: 30px 30px;
+            background-color: rgba(48, 47, 47, 0.6); /* Transparência no fundo da seção de continuar assistindo */
+        }
+
+
+        .continue-watching h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+
+        .thumbnails {
+            display: flex;
+            gap: 10px;
+        }
+
+
+        .thumbnail {
+            width: 150px;
+            height: 90px;
+            background-color: rgba(51, 51, 51, 0.8); /* Fundo semi-transparente nas miniaturas */
+            display: flex;
+           align-items:center;
+           justify-content:center;
+           color:white;
+           font-weight:bold;
+           background-image: url('<img src="https://pipocamoderna.com.br/storage/2020/03/resgate-poster.jpg" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 1200px; height: 381px; margin: 0px; width: 297px;" alt="Resgate: Filme de ação da Netflix com Chris Hemworth ganha pôster e novas  fotos - Pipoca Moderna" jsname="kn3ccd" aria-hidden="false">');
+       }
+       
+       .icons {
+           display:flex;
+           gap :15px;
+           align-items:center;
+       }
+       
+       .icon {
+           font-size :20px;
+           color:white;
+           cursor:pointer;
+       }
+       
+       .profile-icon {
+           width :25px;
+           height :25px;
+           border-radius :50%;
+           background-color :gray; /* Substitua por uma imagem de perfil se disponível */
+           background-image :url('https://i.pinimg.com/474x/32/3e/cc/323ecca68b7105d23184e783b86b0c5a.jpg')
+       }
+    </style>
+</head>
+<body>
+    <!-- Menu de navegação -->
+    <div class="navbar">
+        <div class="logo"><a href="#"><img src="https://www.caviarcriativo.com/storage/2020/06/logotipo-da-netflix.jpg" style="max-height: 50px; width: auto;" alt="Logotipo da Netflix"></a></div>
+       
+        <div class="menu">
+
+
+            <div class="dropdown">
+                <button class="dropbtn">Início</button>
+                <div class="dropdown-content">
+                    <a href="#">Retornar para o inicio</a>
+                </div>
+            </div>
+          <div class="dropdown">
+              <button class="dropbtn">Séries</button>
+              <div class="dropdown-content">
+                  <a href="#">Terror</a>
+                  <a href="#">Romance</a>
+                  <a href="#">Esportes</a>
+              </div>
+          </div>
+          <div class="dropdown">
+              <button class="dropbtn">Filmes</button>
+              <div class="dropdown-content">
+                  <a href="#">Suspense</a>
+                  <a href="#">Ficção Cientifica</a>
+                  <a href="#">Ação</a>
+              </div>
+          </div>
+
+
+          <div class="dropdown">
+            <button class="dropbtn">Mais recentes</button>
+            <div class="dropdown-content">
+                <a href="#">Velozes e Furiosos 7</a>
+                <a href="#">Nada de novo no front</a>
+                <a href="#">The Flash</a>
+            </div>
+          </div>
+         
+          <div class="dropdown">
+            <button class="dropbtn">Minha lista</button>
+            <div class="dropdown-content">
+                <a href="#">Rebel Ridge</a>
+                <a href="#">Armadilha em Alto Mar</a>
+                <a href="#">Feios</a>
+            </div>
+          </div>
+      </div>
+
+
+      <div class="icons">
+          <span class="icon">🔍</span> <!-- Ícone de busca -->
+          <span class="icon">🔔</span> <!-- Ícone de notificação -->
+          <span class="profile-icon"></span> <!-- Ícone de perfil (simulado com um círculo) -->
+      </div>
+    </div>
+
+
+    <!-- Seção principal -->
+    <div class="main-section">
+      <div class="main-content">
+          <h1>Zona<a style="color:red;"><br>de</a> Combate</h1><br>
+          <h3>Top 7 de hoje no Brasil</h3>
+          <p>Em um futuro próximo, um piloto de drone enviado para uma zona de guerra se vê forçado a trabalhar com um oficial androide ultrassecreto em uma missão para impedir um ataque nuclear.</p>
+          <div class="buttons">
+              <button class="button play">▶ Assistir</button>
+              <button class="button info">Mais informações</button>
+          </div>
+      </div>
+    </div>
+
+
+    <!-- Seção "Continuar assistindo" -->
+    <div class="continue-watching">
+      <h2>Continuar assistindo como Yan Henrique</h2>
+      <div class="thumbnails">
+          <div class="thumbnail">Suspense</div>
+          <div class="thumbnail">Ficção Científica</div>
+          <div class="thumbnail">Ação</div>
+      </div>
+    </div>
+
+
+</body>
+</html>
