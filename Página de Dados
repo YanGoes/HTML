@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Virtual - Formulário de Pré-Matrícula</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 450px;
+            margin: 0 auto;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+        h1, h2 {
+            text-align: center;
+            margin: 0;
+            padding: 5px 0;
+        }
+        h2 {
+            margin-top: 5px;
+        }
+        table {
+            width: 100%;
+            margin-top: 10px;
+        }
+        td {
+            padding: 5px;
+        }
+        input[type="text"], input[type="email"] {
+            width: 100%;
+        }
+        .small-input {
+            width: 30px;
+        }
+        .large-input {
+            width: calc(100% - 34px);
+        }
+        .input-group {
+            display: flex;
+            align-items: center;
+        }
+        .input-group input {
+            margin-right: 5px;
+        }
+        select, input[type="radio"], input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .inline-inputs {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+        }
+        .fieldset-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Escola Virtual</h1>
+        <h2>Formulário de Pré-Matrícula</h2>
+
+        <form>
+            <fieldset>
+                <legend class="fieldset-title">Dados Pessoais:</legend>
+                <table>
+                    <tr>
+                        <td><strong>Nome do Aluno:</strong></td>
+                        <td><input type="text" name="nome_aluno"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nascimento (dd/mm/aaaa):</strong></td>
+                        <td>
+                            <div class="inline-inputs">
+                                <input class="small-input" type="text" name="dia" maxlength="2"> /
+                                <input class="small-input" type="text" name="mes" maxlength="2"> /
+                                <input class="small-input" type="text" name="ano" maxlength="4">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nome da Mãe:</strong></td>
+                        <td><input type="text" name="nome_mae"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nome do Pai:</strong></td>
+                        <td><input type="text" name="nome_pai"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Telefone:</strong></td>
+                        <td>
+                            <div class="input-group">
+                                <label>DDD: <input class="small-input" type="text" name="ddd" maxlength="2"></label>
+                                <label>Tel: <input class="large-input" type="text" name="telefone" maxlength="9"></label>
+                                <label>Ramal: <input class="small-input" type="text" name="ramal" maxlength="5"></label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>E-Mail:</strong></td>
+                        <td><input type="email" name="email"></td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend class="fieldset-title">Informações de Matrícula:</legend>
+                <table>
+                    <tr>
+                        <td><strong>Série:</strong></td>
+                        <td>
+                            <select name="serie">
+                                <option value="pre-escolar">pré-escolar</option>
+                                <option value="fundamental1">fundamental 1</option>
+                                <option value="fundamental2">fundamental 2</option>
+                                <option value="medio">ensino médio</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Turno:</strong></td>
+                        <td>
+                            <input type="radio" name="turno" value="manha"> Manhã
+                            <input type="radio" name="turno" value="tarde"> Tarde
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Atividades Extracurriculares:</strong></td>
+                        <td>
+                            <input type="checkbox" name="atividade" value="informatica"> Informática<br>
+                            <input type="checkbox" name="atividade" value="musica"> Música<br>
+                            <input type="checkbox" name="atividade" value="ballet"> Balé<br>
+                            <input type="checkbox" name="atividade" value="pintura"> Pintura<br>
+                            <input type="checkbox" name="atividade" value="judo"> Judô<br>
+                            <input type="checkbox" name="atividade" value="futebol"> Futebol
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <div class="buttons">
+                <input type="submit" value="Envia Formulário">
+                <input type="reset" value="Limpa Campos">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
